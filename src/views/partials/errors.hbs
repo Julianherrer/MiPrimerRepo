@@ -1,0 +1,20 @@
+<!--hace un recorrido de errors y muestra los textos que dispara la BD-->
+
+{{#if error}}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{error}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert">
+        <!--<span aria-hidden="true">&times;</span>-->
+    </button>
+    </div>
+{{/if}}
+
+
+{{#each errors}}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{text}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert">
+        <!--<span aria-hidden="true">&times;</span>-->
+    </button>
+    </div>
+{{/each}}
